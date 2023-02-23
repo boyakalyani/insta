@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="cursive"
+        android:text="Instagram"
+        android:textAppearance="@style/TextAppearance.Material3.DisplayLarge"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:text="Sign up to see photos and videos from your friends."
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/user_id"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:hint="userName"
+        style="@style/CardView.Dark"
+        android:background="@drawable/back"
+        android:paddingLeft="30dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <EditText
+        android:id="@+id/PhoneNum_id"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:hint="Phone Number"
+        style="@style/CardView"
+        android:inputType="textPassword"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/back"
+        android:paddingLeft="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:hint="Email adress"
+        android:id="@+id/Email_id"
+        style="@style/CardView"
+        android:background="@drawable/back"
+        android:paddingLeft="30dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:id="@+id/passWord_id"
+        style="@style/CardView"
+        android:inputType="textPassword"
+        android:background="@drawable/back"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="291dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp"
+        android:text="People who use our service may have uploaded your contact information to Instagram. Learn more
+By signing up, you agree to our Terms, Privacy Policy and Cookies Policy."
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+    <Button
+        android:id="@+id/signIn_id"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/btn_back"
+        android:layout_marginBottom="80dp"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        style="@style/CardView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
